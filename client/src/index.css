@@ -1,4 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: Outfit;
+}
+
+
+
+@layer base {
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+/* ===============================
+   APPLY JOB PAGE CUSTOM STYLES
+================================ */
+
+/* Container background */
+body {
+  background-color: #f9fafb;
+}
+
+/* Company section box */
+.bg-sky-50 {
+  background-color: #f0f9ff;
+}
+
+/* Fix border color typo (border-sky -400) */
+.border-sky\ -400 {
+  border-color: #38bdf8;
+}
+
+/* Company logo */
+img.h-24 {
+  object-fit: contain;
+}
+
+/* Apply Now buttons */
+button.bg-blue-600 {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.bg-blue-600:hover {
+  background-color: #2563eb; /* blue-600 hover */
+  transform: translateY(-1px);
+}
+
+/* ===============================
+   RICH TEXT CONTENT
+================================ */
+.rich-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.rich-text h1,
+.rich-text h2,
+.rich-text h3 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+.rich-text p {
+  margin-bottom: 1rem;
+}
+
+.rich-text ul,
+.rich-text ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rich-text ul li,
+.rich-text ol li {
+  margin-bottom: 0.5rem;
+}
+
+.rich-text ul {
+  list-style-type: disc;
+}
+
+.rich-text ol {
+  list-style-type: decimal;
+}
+
+/* Numbered list style like 1, 2, 3 (if job descriptions use ul/ol) */
+.rich-text ol li::marker {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Links inside description */
+.rich-text a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.rich-text a:hover {
+  color: #1d4ed8;
+}
+
+/* ===============================
+   RESPONSIVE FIXES
+================================ */
+@media (max-width: 768px) {
+  .text-end {
+    text-align: center !important;
+  }
+
+  .px-14 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
 
