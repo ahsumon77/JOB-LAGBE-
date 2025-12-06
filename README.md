@@ -1,4 +1,4 @@
-# Job Portal
+# Job Portal ( InsiderJobs )
 
 A full-stack job portal application with a React + Vite client and an Express/MongoDB server. Supports job listings, applications, recruiter management, and file uploads (Cloudinary).
 
