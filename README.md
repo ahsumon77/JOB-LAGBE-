@@ -233,8 +233,7 @@ Style notes:
 
 Include your license here (MIT, Apache-2.0, etc.). If you don't have one, add a `LICENSE` file to the repo.
 
-Maintainer: mamun2021331086
-            ahsumon77
+Maintainer: mamun2021331086 && ahsumon77
 
 If you'd like, I can:
 - Run a quick repo scan to extract exact `package.json` scripts and populate the README with exact commands
